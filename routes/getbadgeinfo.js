@@ -48,7 +48,7 @@ router.get('/:id',(req,res)=>{
         body[1].forEach((e,i)=>{
             badges[e.toString()]=body[2][i]
         })
-        //console.log(badges)
+    console.log(badges)
     let mainInfo={}
     let sum=0;
     mainInfo.name=body[0]
