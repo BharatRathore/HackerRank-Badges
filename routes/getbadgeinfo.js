@@ -8,8 +8,10 @@ let url = 'https://www.hackerrank.com/';
 const $ = require('cheerio');
 
 router.get('/:id',(req,res)=>{
+    
     id=req.params.id    
     url=url+id
+    
         let returned=rp(url)
     .then(function(html){
         //success!
@@ -34,11 +36,12 @@ router.get('/:id',(req,res)=>{
 
             stars.push(e.children[0].children.length)
         })
+        console.log(name,badgeType,stars)
         return [name,badgeType,stars]
     })
     .catch(function(err){
 
-        
+        console.log(err)
 
         //handle error
     });
@@ -57,6 +60,7 @@ router.get('/:id',(req,res)=>{
     mainInfo.totalBadges=body[1].length
     mainInfo.totalStars=sum
     res.send(mainInfo)
+    url="https://www.hackerrank.com/"
     })
 })
 
