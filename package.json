@@ -1,0 +1,29 @@
+{
+  "name": "hr-webscrap",
+  "version": "1.0.0",
+  "description": "Web app to fetch HackerRank dashboard details",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "puppeteer": "^3.0.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "start":"nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BharatRathore/HR-WebScrap.git"
+  },
+  "author": "Bharat Rathore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BharatRathore/HR-WebScrap/issues"
+  },
+  "homepage": "https://github.com/BharatRathore/HR-WebScrap#readme"
+}
