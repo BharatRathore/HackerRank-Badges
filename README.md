@@ -1,4 +1,4 @@
-# HR-WebScrap
+# HackerRank-Badges-API
 Web app to fetch HackerRank dashboard details which returns the name of the user along with [HackerRank](https://www.hackerrank.com/) **Badges** details
 
 ## API details
