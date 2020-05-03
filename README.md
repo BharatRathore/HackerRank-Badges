@@ -8,7 +8,8 @@ Web app to fetch HackerRank dashboard details which returns the name of the user
 * **Request (GET):** https://hackerrank-badges.herokuapp.com/api/bharatrathore13
 * **Output:**
  ```json
-{   "status":"OK",
+{   
+	"status":"OK",
     "name":"Bharat Rathore",
     "badges":{
         "Problem Solving":3,
@@ -20,5 +21,20 @@ Web app to fetch HackerRank dashboard details which returns the name of the user
     "totalStars":17
 }
 ```
+* **Status**
+	* OK: For successfully fetching info of mentioned id.
+	* ERROR: Invalid ID or url params, check message for more info.
+	```json
+	{
+		"status":"ERROR",
+	 	"message":"You have entered invalid url please enter hostname/api/{hacker-rank-id}"
+	}
+	```
+	```json
+	{
+		"status":"ERROR",
+		"message":"No Such User Exists"
+	}
+	```
 
 
