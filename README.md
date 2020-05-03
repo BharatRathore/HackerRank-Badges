@@ -8,7 +8,7 @@ Web app to fetch HackerRank dashboard details which returns the name of the user
 * **Request (GET):** https://hackerrank-badges.herokuapp.com/api/bharatrathore13
 * **Output:**
  ```json
-{
+{   "status":"OK",
     "name":"Bharat Rathore",
     "badges":{
         "Problem Solving":3,
