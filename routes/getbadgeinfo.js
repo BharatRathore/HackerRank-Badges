@@ -4,7 +4,7 @@ const router = express.Router();
 const rp = require("request-promise");
 let url = "https://www.hackerrank.com/";
 const $ = require("cheerio");
-
+let hitCount=0
 router.get("/:id", (req, res) => {
   id = req.params.id;
   url = url + id;
@@ -54,6 +54,8 @@ router.get("/:id", (req, res) => {
       else{
           res.send({status:"ERROR",message:"No Such User Exists"})
       }
+      hitCount++
+      console.log(hitCount)
       url = "https://www.hackerrank.com/";
        // return [name, badgeType, stars];
     })
