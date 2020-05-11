@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 3001;
 
 const dummy = require("./routes/getbadgeinfo");
 
